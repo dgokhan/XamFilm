@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamFilm.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="OpenSansLight">
+                <On Platform="iOS" Value="OpenSans-Light" />
+                <On Platform="Android" Value="OpenSans-Light.ttf#Light" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="OpenSansBold">
+                <On Platform="iOS" Value="OpenSans-SemiBold" />
+                <On Platform="Android" Value="OpenSans-SemiBold.ttf#SemiBold" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="ProximaRegular">
+                <On Platform="iOS" Value="Proxima Nova Alt Regular" />
+                <On Platform="Android" Value="Proxima Nova Alt Regular.otf#Regular" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="ProximaLight">
+                <On Platform="iOS" Value="Proxima Nova ScOsf Light" />
+                <On Platform="Android" Value="Proxima Nova ScOsf Light.otf#Light" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="ProximaCondensedLight">
+                <On Platform="iOS" Value="Proxima Nova Alt Condensed Light" />
+                <On Platform="Android" Value="Proxima Nova Alt Condensed Light.otf#Light" />
+            </OnPlatform>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

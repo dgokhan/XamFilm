@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamFilm.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image VerticalOptions="Start" Source="filmbanner.png"/>
+
+        <Frame BackgroundColor="Red" Grid.Row="1" CornerRadius="30" Margin="40,-50,-50,25" >
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+            </Grid>
+        </Frame>
+
+        <Grid Grid.Row="2" Margin="17,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" FontSize="25" TextColor="Black" Text="Ford v Ferrai" FontFamily="{StaticResource  OpenSansBold}"/>
+            <Label Grid.Row="1" Grid.Column="0" FontSize="15" TextColor="Black" Text="2019" FontFamily="{StaticResource  ProximaLight}"/>
+            <Label Grid.Row="2" Grid.Column="0" FontSize="15" TextColor="Black" Text="Actions" FontFamily="{StaticResource  ProximaLight}"/>
+            <Label Grid.Row="3" Grid.Column="0" FontSize="15" TextColor="Black" Text="Actions" FontFamily="{StaticResource  OpenSansLight}"/>
+            <Label Grid.Row="4" Grid.Column="0" FontSize="15" TextColor="Black" Text="Actionx" FontFamily="{StaticResource  ProximaCondensedLight}"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>
