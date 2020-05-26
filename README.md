@@ -1,5 +1,4 @@
 # XamFilm
-Xamarin.Forms | XamFilm | Android
 
 Target >
 ![ss1.png](https://raw.githubusercontent.com/heRanarchy/XamFilm/master/images/mobileui.png)
