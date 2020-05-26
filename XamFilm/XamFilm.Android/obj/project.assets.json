@@ -11,6 +11,21 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
+      "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.446417"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid71/ImageCircle.Forms.Plugin.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid71/ImageCircle.Forms.Plugin.dll": {}
+        }
+      },
       "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
         "type": "package",
         "dependencies": {
@@ -804,6 +819,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.5.0.495"
         },
@@ -862,6 +878,28 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
+      "sha512": "59HyuAaUzuloQmu/PVCDCJQMRuuhqmIpCQ+d5hH5Qp8AZsa/vDi5ulrXDKRMZSZt/xbXsyZV+aZ/W/SZaYt2Mg==",
+      "type": "package",
+      "path": "xam.plugins.forms.imagecircle/3.0.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid71/ImageCircle.Forms.Plugin.dll",
+        "lib/monoandroid71/ImageCircle.Forms.Plugin.xml",
+        "lib/netstandard1.0/ImageCircle.Forms.Plugin.dll",
+        "lib/netstandard1.0/ImageCircle.Forms.Plugin.xml",
+        "lib/netstandard2.0/ImageCircle.Forms.Plugin.dll",
+        "lib/netstandard2.0/ImageCircle.Forms.Plugin.xml",
+        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.dll",
+        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.pri",
+        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.xml",
+        "lib/xamarinios10/ImageCircle.Forms.Plugin.dll",
+        "lib/xamarinios10/ImageCircle.Forms.Plugin.xml",
+        "xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
+        "xam.plugins.forms.imagecircle.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -1963,6 +2001,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "Xam.Plugins.Forms.ImageCircle >= 3.0.0.5",
       "XamFilm >= 1.0.0",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.5.0.495"
@@ -1975,11 +2014,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\herma\\source\\repos\\New folder\\XamFilm\\XamFilm\\XamFilm.Android\\XamFilm.Android.csproj",
+      "projectUniqueName": "C:\\Users\\herma\\Documents\\GitHub\\XamFilm\\XamFilm\\XamFilm.Android\\XamFilm.Android.csproj",
       "projectName": "XamFilm.Android",
-      "projectPath": "C:\\Users\\herma\\source\\repos\\New folder\\XamFilm\\XamFilm\\XamFilm.Android\\XamFilm.Android.csproj",
+      "projectPath": "C:\\Users\\herma\\Documents\\GitHub\\XamFilm\\XamFilm\\XamFilm.Android\\XamFilm.Android.csproj",
       "packagesPath": "C:\\Users\\herma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\herma\\source\\repos\\New folder\\XamFilm\\XamFilm\\XamFilm.Android\\obj\\",
+      "outputPath": "C:\\Users\\herma\\Documents\\GitHub\\XamFilm\\XamFilm\\XamFilm.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2000,8 +2039,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\herma\\source\\repos\\New folder\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj": {
-              "projectPath": "C:\\Users\\herma\\source\\repos\\New folder\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj"
+            "C:\\Users\\herma\\Documents\\GitHub\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj": {
+              "projectPath": "C:\\Users\\herma\\Documents\\GitHub\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj"
             }
           }
         }
@@ -2010,6 +2049,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "Xam.Plugins.Forms.ImageCircle": {
+            "target": "Package",
+            "version": "[3.0.0.5, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.3.1, )"

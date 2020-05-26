@@ -2,43 +2,161 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:image="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              mc:Ignorable="d"
              x:Class="XamFilm.MainPage">
 
-    <Grid>
+    <Grid> 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+ 
+        <Image Margin="0,-30,0,0" VerticalOptions="Start" Source="filmbanner.png"/>
 
-        <Image VerticalOptions="Start" Source="filmbanner.png"/>
+        <Label Margin="12,0,0,0" Grid.Row="1" VerticalTextAlignment="Start" FontSize="22" Text="" TextColor="Black" FontFamily="{StaticResource FontAweSolid}"/>
 
-        <Frame BackgroundColor="Red" Grid.Row="1" CornerRadius="30" Margin="40,-50,-50,25" >
-            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+        <Frame Grid.Row="1" CornerRadius="40" Margin="40,-50,-50,25" HasShadow="True" >
+            <Grid> 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
                 </Grid.ColumnDefinitions>
 
+                <StackLayout>
+                    <Label HorizontalOptions="Center" VerticalOptions="Center" FontSize="22" Text="" TextColor="Orange" FontFamily="{StaticResource FontAweSolid}"/>
+                    <Label Grid.Row="1" Text="8.2 / 10" TextColor="Black" FontSize="12" HorizontalOptions="Center" FontFamily="{StaticResource  OpenSansBold}"/> 
+                </StackLayout>
+                
+                <StackLayout Grid.Column="1">
+                    <Label HorizontalOptions="Center" VerticalOptions="Center" FontSize="22" Text="" TextColor="Black" FontFamily="{StaticResource FontAweRegular}"/>
+                    <Label Grid.Row="1" Text="Rate This!" TextColor="Black" FontSize="12" HorizontalOptions="Center" FontFamily="{StaticResource  OpenSansBold}"/>
+                </StackLayout>
+ 
+                <Grid Grid.Column="2" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Label VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="10" Text="86" TextColor="White" BackgroundColor="#51CF66" FontFamily="{StaticResource OpenSansBold}"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="Metascore" HorizontalTextAlignment="Center" TextColor="Black" FontSize="12" FontFamily="{StaticResource  OpenSansBold}"/>
+                
+                </Grid> 
             </Grid>
         </Frame>
 
-        <Grid Grid.Row="2" Margin="17,0,0,0">
+        <Grid Grid.Row="2" Margin="22,-15,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="35"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Row="0" FontSize="30" TextColor="Black" Text="Ford v Ferrai" FontFamily="{StaticResource  OpenSansBold}"/>
+            
+            <Grid Grid.Row="1" Margin="0,-5,0,0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+                
+                <Label Grid.Column="0" FontSize="12" TextColor="#9A9BB2" Text="2019" FontFamily="{StaticResource  ProximaRegular}"/>
+                <Label Grid.Column="1" FontSize="12" TextColor="#9A9BB2" Text="PG-13" FontFamily="{StaticResource  ProximaRegular}"/>
+                <Label Grid.Column="2" FontSize="12" TextColor="#9A9BB2" Text="2h 32min" FontFamily="{StaticResource  ProximaRegular}"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Margin="0,-5,0,0" ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="70"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Column="0" BorderColor="#12153D" BorderWidth="2" CornerRadius="20" BackgroundColor="Transparent" FontSize="10" TextColor="#434670" Text="Action" FontFamily="{StaticResource  ProximaRegular}"/>
+                <Button Grid.Column="1" BorderColor="#12153D" BorderWidth="2" CornerRadius="20" BackgroundColor="Transparent" FontSize="10" TextColor="#434670" Text="Biography" FontFamily="{StaticResource  ProximaRegular}"/>
+                <Button Grid.Column="2" BorderColor="#12153D" BorderWidth="2" CornerRadius="20" BackgroundColor="Transparent" FontSize="10" TextColor="#434670" Text="Drama" FontFamily="{StaticResource  ProximaRegular}"/>
+
+            </Grid>
+
+            <StackLayout Grid.Column="1">
+                <Button  BackgroundColor="#FE6D8E" CornerRadius="15" Margin="-15,0,15,0" Text="" TextColor="White" FontFamily="{StaticResource FontAweSolid}"/>
+                <!--<Frame  BackgroundColor="#FE6D8E" CornerRadius="20" Margin="-15,0,15,0" >
+                    <Label HorizontalOptions="Center" VerticalOptions="Center" FontSize="15" Text="" TextColor="White" FontFamily="{StaticResource FontAweSolid}"/>
+                </Frame>-->
+            </StackLayout>
+        </Grid>
+
+        <Grid Grid.Row="3" Margin="22,10,0,10" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/> 
             </Grid.RowDefinitions>
-            <Label Grid.Row="0" FontSize="25" TextColor="Black" Text="Ford v Ferrai" FontFamily="{StaticResource  OpenSansBold}"/>
-            <Label Grid.Row="1" Grid.Column="0" FontSize="15" TextColor="Black" Text="2019" FontFamily="{StaticResource  ProximaLight}"/>
-            <Label Grid.Row="2" Grid.Column="0" FontSize="15" TextColor="Black" Text="Actions" FontFamily="{StaticResource  ProximaLight}"/>
-            <Label Grid.Row="3" Grid.Column="0" FontSize="15" TextColor="Black" Text="Actions" FontFamily="{StaticResource  OpenSansLight}"/>
-            <Label Grid.Row="4" Grid.Column="0" FontSize="15" TextColor="Black" Text="Actionx" FontFamily="{StaticResource  ProximaCondensedLight}"/>
+
+            <Label Text="Plot Summary" FontSize="22" TextColor="#12153D" FontFamily="{StaticResource OpenSansBold}" />
+            <Label Grid.Row="1" FontSize="12" TextColor="#737599" FontFamily="{StaticResource ProximaRegular}" Text="American car designer Carroll Shelby and driver Kn Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order."  />
+        </Grid>
+
+        <Grid Grid.Row="4" Margin="22,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Text="Cast &amp; Crew" FontSize="22" TextColor="#12153D" FontFamily="{StaticResource OpenSansBold}" />
+            
+            <Grid Grid.Row="1" HorizontalOptions="Start" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/> 
+                </Grid.RowDefinitions> 
+
+                <Grid Grid.Column ="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <image:CircleImage Source="james.png"/>
+                    <Label Grid.Row="1" HorizontalTextAlignment="Center" Text="James &#10;Mangold" VerticalOptions="CenterAndExpand" FontSize="15" TextColor="#12153D" FontFamily="{StaticResource ProximaRegular}" />
+                    <Label Grid.Row="2" HorizontalTextAlignment="Center" Text="Director" FontSize="11" TextColor="#9A9BB2" FontFamily="{StaticResource OpenSansLight}" />
+                </Grid>
+                <Grid Grid.Column ="1" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <image:CircleImage Source="matt.png"/>
+                    <Label Grid.Row="1" HorizontalTextAlignment="Center" Text="Matt &#10;Damon" FontSize="15" TextColor="#12153D" FontFamily="{StaticResource ProximaRegular}" />
+                    <Label Grid.Row="2" HorizontalTextAlignment="Center" Text="Carroll" FontSize="11" TextColor="#9A9BB2" FontFamily="{StaticResource OpenSansLight}" />
+                </Grid>
+                <Grid Grid.Column ="2" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <image:CircleImage Source="christian.png"/>
+                    <Label Grid.Row="1" HorizontalTextAlignment="Center" Text="Christian &#10;Bale" FontSize="15" TextColor="#12153D" FontFamily="{StaticResource ProximaRegular}" />
+                    <Label Grid.Row="2" HorizontalTextAlignment="Center" Text="Ken Miles" FontSize="11" TextColor="#9A9BB2" FontFamily="{StaticResource OpenSansLight}" />
+                </Grid>
+                <Grid Grid.Column ="3" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <image:CircleImage Source="caitriona.png"/>
+                    <Label Grid.Row="1" HorizontalTextAlignment="Center" Text="Caitriona &#10;Balfe" VerticalOptions="CenterAndExpand" FontSize="15" TextColor="#12153D" FontFamily="{StaticResource ProximaRegular}" />
+                    <Label Grid.Row="2" HorizontalTextAlignment="Center" Text="Mollie" FontSize="11" TextColor="#9A9BB2" FontFamily="{StaticResource OpenSansLight}" />
+                </Grid>  
+            </Grid>
         </Grid>
     </Grid>
 

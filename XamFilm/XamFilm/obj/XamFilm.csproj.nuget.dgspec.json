@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\herma\\source\\repos\\New folder\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj": {}
+    "C:\\Users\\herma\\Documents\\GitHub\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\herma\\source\\repos\\New folder\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj": {
+    "C:\\Users\\herma\\Documents\\GitHub\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\herma\\source\\repos\\New folder\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj",
+        "projectUniqueName": "C:\\Users\\herma\\Documents\\GitHub\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj",
         "projectName": "XamFilm",
-        "projectPath": "C:\\Users\\herma\\source\\repos\\New folder\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj",
+        "projectPath": "C:\\Users\\herma\\Documents\\GitHub\\XamFilm\\XamFilm\\XamFilm\\XamFilm.csproj",
         "packagesPath": "C:\\Users\\herma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\herma\\source\\repos\\New folder\\XamFilm\\XamFilm\\XamFilm\\obj\\",
+        "outputPath": "C:\\Users\\herma\\Documents\\GitHub\\XamFilm\\XamFilm\\XamFilm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

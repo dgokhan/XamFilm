@@ -4,5 +4,6 @@
     <SelectedDevice>Samsung SM-J730F</SelectedDevice>
     <DefaultDevice>pixel_2_xl_q_10_0_-_api_29</DefaultDevice>
     <AndroidDesignerPreferredTheme>Theme.AppCompat.Light.NoActionBar</AndroidDesignerPreferredTheme>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>
